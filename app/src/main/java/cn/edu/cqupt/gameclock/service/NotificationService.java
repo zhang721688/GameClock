@@ -21,8 +21,9 @@ import android.os.Vibrator;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 
-import com.hurteng.sandstorm.MainActivity;
+//import com.hurteng.sandstorm.MainActivity;
 
+import cn.edu.cqupt.gameclock.activity.AlarmClockActivity;
 import cn.edu.cqupt.gameclock.alarm.AlarmInfo;
 import cn.edu.cqupt.gameclock.alarm.AlarmSettings;
 import cn.edu.cqupt.gameclock.alarm.AlarmUtil;
@@ -165,7 +166,8 @@ public class NotificationService extends Service {
 
         manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AlarmClockActivity.class);
         notificationActivity = PendingIntent.getActivity(getApplicationContext(), 0, intent, 0);
 
         handler = new Handler();
@@ -220,9 +222,11 @@ public class NotificationService extends Service {
             } catch (NoAlarmsException e) {
               return;
             }
-            Intent notifyActivity = new Intent(getApplicationContext(), MainActivity.class);
+//            Intent notifyActivity = new Intent(getApplicationContext(), MainActivity.class);
+            Intent notifyActivity = new Intent(getApplicationContext(), AlarmClockActivity.class);
             notifyActivity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            notifyActivity.putExtra(MainActivity.TIMEOUT_COMMAND, true);
+//            notifyActivity.putExtra(MainActivity.TIMEOUT_COMMAND, true);
+            //notifyActivity.putExtra(AlarmClockActivity.TIMEOUT_COMMAND, true);
             startActivity(notifyActivity);
           }
         };
@@ -261,7 +265,8 @@ public class NotificationService extends Service {
                 throw new IllegalStateException(e.getMessage());
             }
           }
-          Intent notifyActivity = new Intent(getApplicationContext(), MainActivity.class);
+//          Intent notifyActivity = new Intent(getApplicationContext(), MainActivity.class);
+          Intent notifyActivity = new Intent(getApplicationContext(), AlarmClockActivity.class);
           notifyActivity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
           startActivity(notifyActivity);
 

@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GameClock.iml" filepath="$PROJECT_DIR$/GameClock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StormPlane/GameClock-StormPlane.iml" filepath="$PROJECT_DIR$/StormPlane/GameClock-StormPlane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/GameClock-app.iml" filepath="$PROJECT_DIR$/app/GameClock-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/GameClock-library.iml" filepath="$PROJECT_DIR$/library/GameClock-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GitHub-GameClock.iml" filepath="$PROJECT_DIR$/GitHub-GameClock.iml" />
       <module fileurl="file://$PROJECT_DIR$/StormPlane/StormPlane.iml" filepath="$PROJECT_DIR$/StormPlane/StormPlane.iml" />
       <module fileurl="file://$PROJECT_DIR$/alarm.iml" filepath="$PROJECT_DIR$/alarm.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

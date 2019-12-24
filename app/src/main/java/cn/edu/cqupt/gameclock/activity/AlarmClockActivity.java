@@ -28,7 +28,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.hurteng.sandstorm.MainActivity;
+//import com.hurteng.sandstorm.MainActivity;
 import com.wdullaer.materialdatetimepicker.time.*;
 import com.wdullaer.materialdatetimepicker.time.TimePickerDialog;
 
@@ -245,8 +245,10 @@ public final class AlarmClockActivity extends AppCompatActivity
                 }
 
                 if (count > 0) {
+//                    Intent notifyActivity = new Intent(getApplicationContext(),
+//                            MainActivity.class);
                     Intent notifyActivity = new Intent(getApplicationContext(),
-                            MainActivity.class);
+                            AlarmClockActivity.class);
 
                     notifyActivity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(notifyActivity);
